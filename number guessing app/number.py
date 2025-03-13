@@ -24,7 +24,7 @@ def prompt_user(number_ceiling):
         try:
             guess = int(input(
                 "-: "))
-            if 1 > guess < number_ceiling:
+            if not (1 <= guess <= number_ceiling):
                 print(
                     f"Please enter a number in the range 1 to {number_ceiling}!")
             else:
