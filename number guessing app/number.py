@@ -55,13 +55,13 @@ def win():
 def play_again():
     """prompts the player whether they want to play again or quit"""
     while True:
-        play_again = input("\nWould you like to play again?\n(yes/no) -: ")
-        play_again.strip().lower()
+        again = input(
+            "\nWould you like to play again?\n(yes/no) -: ").strip().lower()
 
-        if play_again == "yes":
+        if again == "yes":
             counter.clear()
             main()
-        elif play_again == "no":
+        elif again == "no":
             sys.exit()
         else:
             print("Please enter yes or no")
