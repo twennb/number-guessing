@@ -1,4 +1,6 @@
 """A CLI based python app where the user guesses a chosen number"""
+
+import random
 # plan:
 # 1. pick number 1-100
 # 2. prompt user to guess number
@@ -9,7 +11,8 @@
 
 def generate_number():
     """generates a random number from 1-100"""
-    # code
+    number = random.randint(1, 100)
+    return number
 
 
 def user_prompt():
@@ -24,13 +27,22 @@ def higher_lower():
 
 def win():
     """congratulates the user if they guess correctly"""
-    # code
 
 
 def main():
     """the main function"""
-    # generate number
-    # prompt user
+    target = generate_number()
+    # print(target)
+
+    print("I have randomly selected a number in the range 1 to 100, can you guess which one?")
+
+    while True:
+        try:
+            choice = int(input(
+                "-: "))
+            break
+        except ValueError:
+            print("Please enter a number")
     # evaluate guess
     # reply with hint or congratulations
 
