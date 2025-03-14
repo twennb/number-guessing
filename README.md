@@ -9,15 +9,15 @@ A simple command-line Python game where the user tries to guess a randomly selec
 3. Open a terminal or command prompt.  
 4. Navigate to the project directory and run:
 
-   -**Windows:**
+   **Windows:**
    ```sh
    python guessing_game.py
    ```
-   -**MacOS:**
+   **MacOS:**
    ```sh
    python3 guessing_game.py
    ```
-   -**Linux:**
+   **Linux:**
    ```sh
    python3 guessing_game.py
    ```
